@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ivette Mujica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="container-fluid text-white text-center py-3">
+        <h1>Ivette Mujica's Projects</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand text-white" href="m6.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active text-white" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Projects Showcase -->
+        <section class="text-center mb-5">
+            <h2>Projects Showcase</h2>
+            <p>Here are some of my recent projects:</p>
+        </section>
+
+        <!-- Projects Table -->
+        <section class="mb-5">
+            <h3>Project Details</h3>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Project</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="535442.png" alt="Project 1" width="150"></td>
+                        <td>About Me Website</td>
+                        <td>My project website, designed to showcase my personal and professional journey in CSS 424. It highlights my journey, achievements, and expertise in web development, Python, and cybersecurity.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="Ronuke C.png" alt="Project 2" width="150"></td>
+                        <td>RONUKE</td>
+                        <td>An interactive sci-fi mystery horror game set in the eerie, abandoned colony Ronuke. Players explore the colony, make choices, and uncover its secrets.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="kitto.png" alt="Project 3" width="150"></td>
+                        <td>Cosplay Store Website Project</td>
+                        <td>An online storefront concept showcasing handcrafted cosplay costumes, accessories, and props created by me.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Interactive Search Section -->
+        <section class="mb-5">
+            <h3>Search Projects</h3>
+            <form id="searchForm">
+                <label for="searchInput" class="form-label">Search for a project by name:</label>
+                <input type="text" id="searchInput" class="form-control mb-2" placeholder="Enter project name" required>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+            <p id="searchMessage" class="mt-3 text-success" style="display: none;">Search completed successfully!</p>
+        </section>
+
+        <!-- Video Section -->
+        <section class="mb-5">
+            <h3>Related Video</h3>
+            <p>Watch this video to learn more about the steps I took to make my cosplay store front website come alive!</p>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/yQimoqo0-7g" 
+                        title="YouTube video" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ivette Mujica</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript for Search -->
+    <script>
+        const searchForm = document.getElementById('searchForm');
+        const searchMessage = document.getElementById('searchMessage');
+
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            searchMessage.style.display = 'block';
+            setTimeout(() => {
+                searchMessage.style.display = 'none';
+            }, 3000); // Message disappears after 3 seconds
+        });
+    </script>
+</body>
+</html>
