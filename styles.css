@@ -1,0 +1,80 @@
+:root { 
+    --primary-color: #6a0dad;       /* Found all the colors online */
+    --secondary-color: #8a2be2;     
+    --background-color: #f5e6fa;    
+    --accent-color: #ffffff;        
+    --footer-color: #9370db;        
+    --text-color: #4b0082;          
+}
+
+/* Body */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color); /* White text in header */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--secondary-color); /* Medium purple for navbar */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--accent-color) !important; /* White text in navbar links */
+}
+
+.navbar .nav-link:hover {
+    color: var(--background-color); /* Slightly lighter color on hover */
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+main h2, main h3 {
+    color: var(--primary-color); /* Use primary color for all section headings */
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-color);
+    color: var(--accent-color); /* White text */
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+/* SVG Container */
+.svg-container {
+    display: flex;                /* Align images in a row */
+    flex-wrap: wrap;              /* Wrap to next row if needed */
+    justify-content: center;      /* Center images horizontally */
+    gap: 20px;                    /* Add spacing between the images */
+}
+
+.svg-container img {
+    flex-shrink: 0;               /* Prevent the images from shrinking */
+    max-width: 100px;             /* Set a consistent image width */
+    max-height: 100px;            /* Set a consistent image height */
+    transition: transform 0.3s ease; /* Add hover effect for interactivity */
+}
+
+.svg-container img:hover {
+    transform: scale(1.1);        /* Slight zoom on hover */
+}
